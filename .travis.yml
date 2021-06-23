@@ -8,3 +8,19 @@ before_install:
 
 script:
   - docker run -e CI=true aleksa24/docker-react npm run test
+
+# deploy:
+#   provider: elasticbeanstalk
+#   region: "us-west-2" #nalazi se u generisanom linku koji ti da aws
+#   app: "docker-react" #kako se zove na aws
+#   env: "Docker-env" #enviroment je na aws posebna stvar
+#   bucket_name: "elasticbeanstalk-us-west-2-sdsdhgsdhgsd" #bucket se kreira automatski samo ga treba naci i kopirati, obo je valjda gde ce da se salje nas zipovan fajl koji treba da se deploy
+#   bucket_path: "docker-react" #ime fajla u bucketu
+#   on:
+#     branch: master #kada se pusuje na master radi deploy
+#   #NEKE DVE SIFRE KOJE SU SPECIFICNE ZA USERA KOJEG GENERISES NA AWS,SITAJU SE SA TRAVIS SAJTA GDE IH POSTAVIS U SETTINGS->ENVIROMENT VARIABLES
+#   access_key-id: $AWS_ACCESS_KEY
+#   secret_access_key: $AWS_SECRET_KEY
+
+
+
