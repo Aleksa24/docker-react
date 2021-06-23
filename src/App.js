@@ -16,7 +16,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          i was changed on fiture branch!
         </a>
       </header>
     </div>
